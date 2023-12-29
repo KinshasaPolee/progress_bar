@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    background-color: grey;
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+}
+
+.progress-done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(
+        to left,
+        rgb(87, 4, 87),
+        rgb(172, 9, 172),
+        rgb(247, 7, 247)
+    );
+    box-shadow: 0 5px 5px -6px rgb(87, 4, 87), 0 3px 7px rgb(172, 9, 172);
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    width: 0;
+    transition: 1s ease 0.3s;
+}
+
+.inputContainer {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
